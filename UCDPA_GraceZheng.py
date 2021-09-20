@@ -99,6 +99,9 @@ plt.ylabel("Values of trade volume(UTC)")
 plt.legend(loc=1)
 plt.show()
 
+## Insight 2
+## Insight 3
+
 ## Using Group and Numpy function
 ## View monthly trading volume
 data['date'] = data['date'].map(lambda x: 100*x.year + x.month)
@@ -173,6 +176,8 @@ print(ChangeValue.sort_values())
 UnstableDay = bitstamp[(bitstamp['Timestamp'] >=pd.to_datetime('20210222')) & (bitstamp['Timestamp'] <= pd.to_datetime('20210223'))]
 print(UnstableDay)
 
+## Insight 4
+
 ## The forth chart:
 ## Plot the price change
 plt.figure(figsize=(7,5))
@@ -184,5 +189,7 @@ print(sum(ChangeValue<0))
 ## Sum the rise time
 print(sum(ChangeValue>0))
 
+
+## Insight 5
 
 ## The End
